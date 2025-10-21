@@ -1,5 +1,6 @@
 import express from "express";
 const app = express();
+import { PORT } from "./config/env.js";
 
 //Create an API
 app.get("/", (req, res) => {
@@ -8,7 +9,7 @@ app.get("/", (req, res) => {
 
 
 app.listen(3000,() =>{
-    console.log("Listening on port 3000: http://localhost:3000");
+    console.log(`Listening on port : http://localhost:${ PORT }`);
 });
 
 export default app;
