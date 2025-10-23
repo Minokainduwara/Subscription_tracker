@@ -14,3 +14,5 @@ userRouter.post('/',(req, res) => res.send({tittle: 'CREATE new users'}));
 userRouter.put('/:id',(req, res) => res.send({tittle: 'UPDATE user by id'}));
 
 userRouter.delete('/:id',(req, res) => res.send({tittle: 'Delete user by id'}));
+
+export default userRouter;
